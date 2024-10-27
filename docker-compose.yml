@@ -9,3 +9,6 @@ services:
       - "4000:8080"
     volumes:
       - "swim4love:/app"
+
+volumes:
+    swim4love:
