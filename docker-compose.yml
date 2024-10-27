@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  swim4love:
+    image: "henryxiaoyang/swim4love:latest"
+    restart: unless-stopped
+    container_name: "Swim4Love"
+    ports:
+      - "4000:8080"
+    volumes:
+      - "swim4love:/app"
